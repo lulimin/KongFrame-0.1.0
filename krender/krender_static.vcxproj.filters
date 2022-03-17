@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="lib_entry.cpp" />
+    <ClCompile Include="render_service.cpp" />
+    <ClCompile Include="asset_thread.cpp" />
+    <ClCompile Include="texture.cpp" />
+    <ClCompile Include="texture_loader.cpp" />
+    <ClCompile Include="gles3\gles3_blend_state.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+    <ClCompile Include="gles3\gles3_color_buffer.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+    <ClCompile Include="gles3\gles3_color_texture.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+    <ClCompile Include="gles3\gles3_depth_buffer.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+    <ClCompile Include="gles3\gles3_depth_stencil_state.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+    <ClCompile Include="gles3\gles3_depth_texture.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+    <ClCompile Include="gles3\gles3_device.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+    <ClCompile Include="gles3\gles3_dynamic_index_buffer.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+    <ClCompile Include="gles3\gles3_dynamic_texture.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+    <ClCompile Include="gles3\gles3_dynamic_uniform_buffer.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+    <ClCompile Include="gles3\gles3_dynamic_vertex_buffer.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+    <ClCompile Include="gles3\gles3_frame_buffer.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+    <ClCompile Include="gles3\gles3_pixel_shader.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+    <ClCompile Include="gles3\gles3_rasterize_state.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+    <ClCompile Include="gles3\gles3_sampler_state.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+    <ClCompile Include="gles3\gles3_shader_program.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+    <ClCompile Include="gles3\gles3_shader_texture.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+    <ClCompile Include="gles3\gles3_static_index_buffer.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+    <ClCompile Include="gles3\gles3_static_texture.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+    <ClCompile Include="gles3\gles3_static_uniform_buffer.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+    <ClCompile Include="gles3\gles3_static_vertex_buffer.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+    <ClCompile Include="gles3\gles3_utility.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+    <ClCompile Include="gles3\gles3_vertex_descriptor.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+    <ClCompile Include="gles3\gles3_vertex_shader.cpp">
+      <Filter>gles3</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="render_service.h" />
+    <ClInclude Include="asset_thread.h" />
+    <ClInclude Include="asset_task_buffer.h" />
+    <ClInclude Include="asset_container.h" />
+    <ClInclude Include="texture.h" />
+    <ClInclude Include="texture_loader.h" />
+    <ClInclude Include="gles3\gles3_blend_state.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_color_buffer.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_color_texture.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_depth_buffer.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_depth_stencil_state.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_depth_texture.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_device.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_dynamic_index_buffer.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_dynamic_texture.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_dynamic_uniform_buffer.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_dynamic_vertex_buffer.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_frame_buffer.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_pixel_shader.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_rasterize_state.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_sampler_state.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_shader_program.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_shader_texture.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_static_index_buffer.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_static_texture.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_static_uniform_buffer.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_static_vertex_buffer.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_utility.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_vertex_descriptor.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_vertex_shader.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+    <ClInclude Include="gles3\gles3_header.h">
+      <Filter>gles3</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="gles3">
+      <UniqueIdentifier>{12a06de8-b27e-45ca-bd5f-2e3cc9895660}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

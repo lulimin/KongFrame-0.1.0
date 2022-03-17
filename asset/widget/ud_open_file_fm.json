@@ -1,0 +1,164 @@
+{
+	"widget": "FlatForm",
+	"name": "ud_open_file_fm",
+	"script": "ud_open_file_fm",
+	"loader": "ud_open_file_fm_load",
+	"properties": {
+		"Left": "64",
+		"Top": "64",
+		"Width": "712",
+		"Height": "480"
+	},
+	"events": {
+		"show": "ud_open_file_fm_show"
+	},
+	"children": {
+		"file_lv": {
+			"widget": "FlatListView",
+			"name": "file_lv",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "240",
+				"Top": "40",
+				"Width": "456",
+				"Height": "304",
+				"ItemWidth": "400",
+				"ItemHeight": "32",
+				"GlyphWidth": "32",
+				"GlyphHeight": "32",
+				"Sorted": "true",
+				"RightText": "true"
+			},
+			"events": {
+				"select": "file_lv_select"
+			},
+			"parts": {
+				"VScrollBar": {
+					"widget": "FlatVScrollBar",
+					"properties": {},
+					"parts": {
+						"UpButton": {
+							"widget": "FlatButton",
+							"properties": {}
+						},
+						"DownButton": {
+							"widget": "FlatButton",
+							"properties": {}
+						},
+						"SlideButton": {
+							"widget": "FlatButton",
+							"properties": {}
+						}
+					}
+				}
+			}
+		},
+		"file_tx": {
+			"widget": "FlatTextBox",
+			"name": "file_tx",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "240",
+				"Top": "360",
+				"Width": "456",
+				"Height": "40"
+			},
+			"events": {}
+		},
+		"ok_bn": {
+			"widget": "FlatButton",
+			"name": "ok_bn",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "216",
+				"Top": "424",
+				"Width": "120",
+				"Height": "32",
+				"Text": "OK"
+			},
+			"events": {
+				"click": "ok_bn_click"
+			}
+		},
+		"cancel_bn": {
+			"widget": "FlatButton",
+			"name": "cancel_bn",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "376",
+				"Top": "424",
+				"Width": "120",
+				"Height": "32",
+				"Text": "Cancel"
+			},
+			"events": {
+				"click": "cancel_bn_click"
+			}
+		},
+		"path_tv": {
+			"widget": "FlatTreeView",
+			"name": "path_tv",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "16",
+				"Top": "40",
+				"Width": "208",
+				"Height": "304",
+				"ItemHeight": "32",
+				"IndentWidth": "16",
+				"ShowPlusMinus": "true"
+			},
+			"events": {
+				"select": "path_tv_select",
+				"expand": "path_tv_expand"
+			},
+			"parts": {
+				"VScrollBar": {
+					"widget": "FlatVScrollBar",
+					"properties": {},
+					"parts": {
+						"UpButton": {
+							"widget": "FlatButton",
+							"properties": {}
+						},
+						"DownButton": {
+							"widget": "FlatButton",
+							"properties": {}
+						},
+						"SlideButton": {
+							"widget": "FlatButton",
+							"properties": {}
+						}
+					}
+				},
+				"HScrollBar": {
+					"widget": "FlatHScrollBar",
+					"properties": {},
+					"parts": {
+						"LeftButton": {
+							"widget": "FlatButton",
+							"properties": {}
+						},
+						"RightButton": {
+							"widget": "FlatButton",
+							"properties": {}
+						},
+						"SlideButton": {
+							"widget": "FlatButton",
+							"properties": {}
+						}
+					}
+				},
+				"CrossLabel": {
+					"widget": "FlatLabel",
+					"properties": {}
+				}
+			}
+		}
+	}
+}

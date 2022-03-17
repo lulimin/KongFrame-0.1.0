@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A6452280-C16C-45C6-BD4C-C680AF6DA936}</ProjectGuid>
+    <RootNamespace>kframe</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetExt>.dll</TargetExt>
+    <IntDir>$(SolutionDir)_intermediate\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(SolutionDir)_intermediate\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
+    </Link>
+    <Link>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+    <Link>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>K_DEBUG;_WINDOWS;_USRDLL;KFRAME_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+    <Link>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;KFRAME_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ext\lua-5.3.6\lapi.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\lauxlib.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\lbaselib.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\lbitlib.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\lcode.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\lcorolib.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\lctype.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\ldblib.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\ldebug.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\ldo.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\ldump.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\lfunc.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\lgc.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\linit.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\liolib.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\llex.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\lmathlib.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\lmem.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\loadlib.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\lobject.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\lopcodes.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\loslib.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\lparser.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\lstate.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\lstring.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\lstrlib.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\ltable.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\ltablib.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\ltm.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\lundump.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\lutf8lib.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\lvm.c" />
+    <ClCompile Include="..\ext\lua-5.3.6\lzio.c" />
+    <ClCompile Include="frame_factory.cpp" />
+    <ClCompile Include="frame_file_access.cpp" />
+    <ClCompile Include="frame_imp.cpp" />
+    <ClCompile Include="frame_objects.cpp" />
+    <ClCompile Include="frame_object_desc.cpp" />
+    <ClCompile Include="frame_object_hook.cpp" />
+    <ClCompile Include="frame_services.cpp" />
+    <ClCompile Include="lib_entry.cpp" />
+    <ClCompile Include="script_extend.cpp" />
+    <ClCompile Include="script_manager.cpp" />
+    <ClCompile Include="script_meta.cpp" />
+    <ClCompile Include="script_pool.cpp" />
+    <ClCompile Include="script_routine.cpp" />
+    <ClCompile Include="script_file.cpp" />
+    <ClCompile Include="script_utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ext\lua-5.3.6\lapi.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\lauxlib.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\lcode.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\lctype.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\ldebug.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\ldo.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\lfunc.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\lgc.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\llex.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\llimits.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\lmem.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\lobject.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\lopcodes.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\lparser.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\lprefix.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\lstate.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\lstring.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\ltable.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\ltm.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\lua.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\lua.hpp" />
+    <ClInclude Include="..\ext\lua-5.3.6\luaconf.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\lualib.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\lundump.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\lvm.h" />
+    <ClInclude Include="..\ext\lua-5.3.6\lzio.h" />
+    <ClInclude Include="frame_data_table.h" />
+    <ClInclude Include="frame_factory.h" />
+    <ClInclude Include="frame_file_access.h" />
+    <ClInclude Include="frame_imp.h" />
+    <ClInclude Include="frame_inner_mem.h" />
+    <ClInclude Include="frame_objects.h" />
+    <ClInclude Include="frame_object_desc.h" />
+    <ClInclude Include="frame_object_hook.h" />
+    <ClInclude Include="frame_services.h" />
+    <ClInclude Include="script_extend.h" />
+    <ClInclude Include="script_manager.h" />
+    <ClInclude Include="script_meta.h" />
+    <ClInclude Include="script_pool.h" />
+    <ClInclude Include="script_routine.h" />
+    <ClInclude Include="script_file.h" />
+    <ClInclude Include="script_utility.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

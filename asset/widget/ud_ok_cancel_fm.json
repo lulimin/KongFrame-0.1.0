@@ -1,0 +1,64 @@
+{
+	"widget": "FlatForm",
+	"name": "ud_ok_cancel_fm",
+	"script": "ud_ok_cancel_fm",
+	"loader": "ud_ok_cancel_fm_load",
+	"properties": {
+		"Left": "96",
+		"Top": "88",
+		"Width": "600",
+		"Height": "280"
+	},
+	"events": {
+		"show": "ud_ok_cancel_fm_show"
+	},
+	"children": {
+		"notify_lb": {
+			"widget": "FlatLabel",
+			"name": "notify_lb",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "72",
+				"Top": "80",
+				"Width": "432",
+				"Height": "40",
+				"Text": "label1",
+				"TextAlign": "Center"
+			},
+			"events": {}
+		},
+		"ok_bn": {
+			"widget": "FlatButton",
+			"name": "ok_bn",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "144",
+				"Top": "168",
+				"Width": "120",
+				"Height": "32",
+				"Text": "OK"
+			},
+			"events": {
+				"click": "ok_bn_click"
+			}
+		},
+		"cancel_bn": {
+			"widget": "FlatButton",
+			"name": "cancel_bn",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "328",
+				"Top": "168",
+				"Width": "120",
+				"Height": "32",
+				"Text": "Cancel"
+			},
+			"events": {
+				"click": "cancel_bn_click"
+			}
+		}
+	}
+}

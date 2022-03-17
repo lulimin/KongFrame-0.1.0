@@ -1,0 +1,185 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kclient", "kclient\kclient.vcxproj", "{5B478C70-20A7-474A-B935-714117857F59}"
+	ProjectSection(ProjectDependencies) = postProject
+		{951E5D43-94F6-4250-A500-50D1983681DD} = {951E5D43-94F6-4250-A500-50D1983681DD}
+		{A6452280-C16C-45C6-BD4C-C680AF6DA936} = {A6452280-C16C-45C6-BD4C-C680AF6DA936}
+		{578AFF80-A558-4A1F-BA00-7DFA4124DF9E} = {578AFF80-A558-4A1F-BA00-7DFA4124DF9E}
+		{BB9B5F8A-F509-473C-88D9-8F6D97C71FEB} = {BB9B5F8A-F509-473C-88D9-8F6D97C71FEB}
+		{853C7DE4-11DD-45C3-97D7-A4B3E4E7BBB4} = {853C7DE4-11DD-45C3-97D7-A4B3E4E7BBB4}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kflat_static", "kflat\kflat_static.vcxproj", "{BB9B5F8A-F509-473C-88D9-8F6D97C71FEB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A6452280-C16C-45C6-BD4C-C680AF6DA936} = {A6452280-C16C-45C6-BD4C-C680AF6DA936}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kflatex_static", "kflatex\kflatex_static.vcxproj", "{853C7DE4-11DD-45C3-97D7-A4B3E4E7BBB4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A6452280-C16C-45C6-BD4C-C680AF6DA936} = {A6452280-C16C-45C6-BD4C-C680AF6DA936}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kframe_static", "kframe\kframe_static.vcxproj", "{A6452280-C16C-45C6-BD4C-C680AF6DA936}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "khelper_static", "khelper\khelper_static.vcxproj", "{578AFF80-A558-4A1F-BA00-7DFA4124DF9E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A6452280-C16C-45C6-BD4C-C680AF6DA936} = {A6452280-C16C-45C6-BD4C-C680AF6DA936}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "krender_static", "krender\krender_static.vcxproj", "{951E5D43-94F6-4250-A500-50D1983681DD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A6452280-C16C-45C6-BD4C-C680AF6DA936} = {A6452280-C16C-45C6-BD4C-C680AF6DA936}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "inc", "inc", "{F2415701-9BB2-4F11-91C8-56A485B36867}"
+	ProjectSection(SolutionItems) = preProject
+		inc\arg_data.h = inc\arg_data.h
+		inc\arg_list.h = inc\arg_list.h
+		inc\arg_reader.h = inc\arg_reader.h
+		inc\arg_string.h = inc\arg_string.h
+		inc\arg_writer.h = inc\arg_writer.h
+		inc\auto_buffer.h = inc\auto_buffer.h
+		inc\auto_string.h = inc\auto_string.h
+		inc\char_traits.h = inc\char_traits.h
+		inc\common.h = inc\common.h
+		inc\data_type.h = inc\data_type.h
+		inc\frame_api.h = inc\frame_api.h
+		inc\frame_def.h = inc\frame_def.h
+		inc\frame_file.h = inc\frame_file.h
+		inc\frame_func.h = inc\frame_func.h
+		inc\frame_mem.h = inc\frame_mem.h
+		inc\frame_preset.h = inc\frame_preset.h
+		inc\frame_types.h = inc\frame_types.h
+		inc\i_arg_data.h = inc\i_arg_data.h
+		inc\i_arg_list.h = inc\i_arg_list.h
+		inc\i_data_table.h = inc\i_data_table.h
+		inc\i_file_access.h = inc\i_file_access.h
+		inc\i_object.h = inc\i_object.h
+		inc\i_object_creator.h = inc\i_object_creator.h
+		inc\i_object_desc.h = inc\i_object_desc.h
+		inc\i_object_hook.h = inc\i_object_hook.h
+		inc\i_service.h = inc\i_service.h
+		inc\i_service_creator.h = inc\i_service_creator.h
+		inc\json_writer.h = inc\json_writer.h
+		inc\literal_hash_table.h = inc\literal_hash_table.h
+		inc\memory_map.h = inc\memory_map.h
+		inc\mutex.h = inc\mutex.h
+		inc\net_socket.h = inc\net_socket.h
+		inc\platform.h = inc\platform.h
+		inc\pod_array.h = inc\pod_array.h
+		inc\pod_hash.h = inc\pod_hash.h
+		inc\pod_hash_table.h = inc\pod_hash_table.h
+		inc\string_hash_table.h = inc\string_hash_table.h
+		inc\string_pairs.h = inc\string_pairs.h
+		inc\thread.h = inc\thread.h
+		inc\thread_lock.h = inc\thread_lock.h
+		inc\tick_counter.h = inc\tick_counter.h
+		inc\time_counter.h = inc\time_counter.h
+		inc\unicode.h = inc\unicode.h
+		inc\uniqid.h = inc\uniqid.h
+		inc\utility.h = inc\utility.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "kgraphic", "kgraphic", "{590E6AA4-3EF1-4E42-AA2E-8314ABA1AA94}"
+	ProjectSection(SolutionItems) = preProject
+		kgraphic\i_asset_loader.h = kgraphic\i_asset_loader.h
+		kgraphic\i_input_service.h = kgraphic\i_input_service.h
+		kgraphic\i_render_service.h = kgraphic\i_render_service.h
+		kgraphic\i_renderable.h = kgraphic\i_renderable.h
+		kgraphic\i_texture.h = kgraphic\i_texture.h
+		kgraphic\rhi_device.h = kgraphic\rhi_device.h
+		kgraphic\rhi_resource.h = kgraphic\rhi_resource.h
+		kgraphic\rhi_shader_texture.h = kgraphic\rhi_shader_texture.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apple", "apple", "{2726538A-7796-42DB-AD2D-B07C81ABF6C0}"
+	ProjectSection(SolutionItems) = preProject
+		inc\apple\apple_atomic.h = inc\apple\apple_atomic.h
+		inc\apple\apple_dll.h = inc\apple\apple_dll.h
+		inc\apple\apple_file.h = inc\apple\apple_file.h
+		inc\apple\apple_lock.h = inc\apple\apple_lock.h
+		inc\apple\apple_mmap.h = inc\apple\apple_mmap.h
+		inc\apple\apple_mutex.h = inc\apple\apple_mutex.h
+		inc\apple\apple_net.h = inc\apple\apple_net.h
+		inc\apple\apple_platform.h = inc\apple\apple_platform.h
+		inc\apple\apple_string.h = inc\apple\apple_string.h
+		inc\apple\apple_thread.h = inc\apple\apple_thread.h
+		inc\apple\apple_timer.h = inc\apple\apple_timer.h
+		inc\apple\apple_unicode.h = inc\apple\apple_unicode.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "linux", "linux", "{13363843-59EF-458B-994A-8CD045D46C87}"
+	ProjectSection(SolutionItems) = preProject
+		inc\linux\linux_atomic.h = inc\linux\linux_atomic.h
+		inc\linux\linux_dll.h = inc\linux\linux_dll.h
+		inc\linux\linux_file.h = inc\linux\linux_file.h
+		inc\linux\linux_lock.h = inc\linux\linux_lock.h
+		inc\linux\linux_mmap.h = inc\linux\linux_mmap.h
+		inc\linux\linux_mutex.h = inc\linux\linux_mutex.h
+		inc\linux\linux_net.h = inc\linux\linux_net.h
+		inc\linux\linux_platform.h = inc\linux\linux_platform.h
+		inc\linux\linux_string.h = inc\linux\linux_string.h
+		inc\linux\linux_thread.h = inc\linux\linux_thread.h
+		inc\linux\linux_timer.h = inc\linux\linux_timer.h
+		inc\linux\linux_unicode.h = inc\linux\linux_unicode.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "windows", "windows", "{46D1B16B-C044-4A4A-AA9C-B074A9BEE495}"
+	ProjectSection(SolutionItems) = preProject
+		inc\windows\windows_atomic.h = inc\windows\windows_atomic.h
+		inc\windows\windows_dll.h = inc\windows\windows_dll.h
+		inc\windows\windows_file.h = inc\windows\windows_file.h
+		inc\windows\windows_lock.h = inc\windows\windows_lock.h
+		inc\windows\windows_mmap.h = inc\windows\windows_mmap.h
+		inc\windows\windows_mutex.h = inc\windows\windows_mutex.h
+		inc\windows\windows_net.h = inc\windows\windows_net.h
+		inc\windows\windows_platform.h = inc\windows\windows_platform.h
+		inc\windows\windows_string.h = inc\windows\windows_string.h
+		inc\windows\windows_thread.h = inc\windows\windows_thread.h
+		inc\windows\windows_timer.h = inc\windows\windows_timer.h
+		inc\windows\windows_unicode.h = inc\windows\windows_unicode.h
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B478C70-20A7-474A-B935-714117857F59}.Debug|x64.ActiveCfg = Debug|x64
+		{5B478C70-20A7-474A-B935-714117857F59}.Debug|x64.Build.0 = Debug|x64
+		{5B478C70-20A7-474A-B935-714117857F59}.Release|x64.ActiveCfg = Release|x64
+		{5B478C70-20A7-474A-B935-714117857F59}.Release|x64.Build.0 = Release|x64
+		{BB9B5F8A-F509-473C-88D9-8F6D97C71FEB}.Debug|x64.ActiveCfg = Debug|x64
+		{BB9B5F8A-F509-473C-88D9-8F6D97C71FEB}.Debug|x64.Build.0 = Debug|x64
+		{BB9B5F8A-F509-473C-88D9-8F6D97C71FEB}.Release|x64.ActiveCfg = Release|x64
+		{BB9B5F8A-F509-473C-88D9-8F6D97C71FEB}.Release|x64.Build.0 = Release|x64
+		{853C7DE4-11DD-45C3-97D7-A4B3E4E7BBB4}.Debug|x64.ActiveCfg = Debug|x64
+		{853C7DE4-11DD-45C3-97D7-A4B3E4E7BBB4}.Debug|x64.Build.0 = Debug|x64
+		{853C7DE4-11DD-45C3-97D7-A4B3E4E7BBB4}.Release|x64.ActiveCfg = Release|x64
+		{853C7DE4-11DD-45C3-97D7-A4B3E4E7BBB4}.Release|x64.Build.0 = Release|x64
+		{A6452280-C16C-45C6-BD4C-C680AF6DA936}.Debug|x64.ActiveCfg = Debug|x64
+		{A6452280-C16C-45C6-BD4C-C680AF6DA936}.Debug|x64.Build.0 = Debug|x64
+		{A6452280-C16C-45C6-BD4C-C680AF6DA936}.Release|x64.ActiveCfg = Release|x64
+		{A6452280-C16C-45C6-BD4C-C680AF6DA936}.Release|x64.Build.0 = Release|x64
+		{578AFF80-A558-4A1F-BA00-7DFA4124DF9E}.Debug|x64.ActiveCfg = Debug|x64
+		{578AFF80-A558-4A1F-BA00-7DFA4124DF9E}.Debug|x64.Build.0 = Debug|x64
+		{578AFF80-A558-4A1F-BA00-7DFA4124DF9E}.Release|x64.ActiveCfg = Release|x64
+		{578AFF80-A558-4A1F-BA00-7DFA4124DF9E}.Release|x64.Build.0 = Release|x64
+		{951E5D43-94F6-4250-A500-50D1983681DD}.Debug|x64.ActiveCfg = Debug|x64
+		{951E5D43-94F6-4250-A500-50D1983681DD}.Debug|x64.Build.0 = Debug|x64
+		{951E5D43-94F6-4250-A500-50D1983681DD}.Release|x64.ActiveCfg = Release|x64
+		{951E5D43-94F6-4250-A500-50D1983681DD}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2726538A-7796-42DB-AD2D-B07C81ABF6C0} = {F2415701-9BB2-4F11-91C8-56A485B36867}
+		{13363843-59EF-458B-994A-8CD045D46C87} = {F2415701-9BB2-4F11-91C8-56A485B36867}
+		{46D1B16B-C044-4A4A-AA9C-B074A9BEE495} = {F2415701-9BB2-4F11-91C8-56A485B36867}
+	EndGlobalSection
+EndGlobal

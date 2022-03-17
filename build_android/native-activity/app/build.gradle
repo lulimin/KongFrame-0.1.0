@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    ndkVersion '22.1.7171670'
+
+    defaultConfig {
+        applicationId = 'com.kong.kclient'
+        minSdkVersion 21
+        targetSdkVersion 29
+        externalNativeBuild {
+            cmake {
+                arguments '-DANDROID_STL=c++_static'
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                    'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            version '3.18.1'
+            path '../../../CMakeLists.txt'
+            //path 'src/main/cpp/CMakeLists.txt'
+        }
+    }
+}
+
+//android.applicationVariants.all { variant ->
+//    delete "${projectDir}/assets"
+//    def targetName = variant.name.capitalize()
+//    def copyTaskName = "copy${targetName}ResourcesToAssets"
+//    tasks.register(copyTaskName) {
+//        copy {
+//            from "${projectDir}/../../../asset"
+//            into "${projectDir}/assets/asset"
+//            //exclude ""
+//        }
+//    }
+//    tasks.getByName("pre${targetName}Build").dependsOn copyTaskName
+//}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+}

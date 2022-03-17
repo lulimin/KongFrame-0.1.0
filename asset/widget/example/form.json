@@ -1,0 +1,721 @@
+{
+	"widget": "FlatForm",
+	"name": "test_form",
+	"script": "",
+	"loader": "",
+	"properties": {
+		"Left": "0",
+		"Top": "0",
+		"Width": "1424",
+		"Height": "861",
+		"BackImage": "png/tools.png"
+	},
+	"events": {},
+	"parts": {},
+	"children": {
+		"test_button": {
+			"widget": "FlatButton",
+			"name": "test_button",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "20",
+				"Top": "10",
+				"Width": "200",
+				"Height": "40",
+				"Hint": "Click button",
+				"ForeColor": "200,200,200,255",
+				"BackColor": "120,120,120,255",
+				"Text": "Button"
+			},
+			"events": {},
+			"parts": {}
+		},
+		"test_label": {
+			"widget": "FlatLabel",
+			"name": "test_label",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "20",
+				"Top": "100",
+				"Width": "200",
+				"Height": "50",
+				"ForeColor": "255,255,0,255",
+				"BackColor": "120,120,120,255",
+				"Text": "Label",
+				"Background": "true",
+				"Border": "true"
+			},
+			"events": {},
+			"parts": {}
+		},
+		"test_progress_bar": {
+			"widget": "FlatProgressBar",
+			"name": "test_progress_bar",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "20",
+				"Top": "200",
+				"Width": "200",
+				"Height": "8",
+				"Value": "50"
+			},
+			"events": {},
+			"parts": {}
+		},
+		"test_check_box": {
+			"widget": "FlatCheckBox",
+			"name": "test_check_box",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "20",
+				"Top": "300",
+				"Width": "200",
+				"Height": "30",
+				"Text": "check box"
+			},
+			"events": {},
+			"parts": {}
+		},
+		"test_radio_button_1": {
+			"widget": "FlatRadioButton",
+			"name": "test_radio_button_1",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "20",
+				"Top": "400",
+				"Width": "100",
+				"Height": "30",
+				"Text": "rb1"
+			},
+			"events": {},
+			"parts": {}
+		},
+		"test_radio_button_2": {
+			"widget": "FlatRadioButton",
+			"name": "test_radio_button_2",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "120",
+				"Top": "400",
+				"Width": "100",
+				"Height": "30",
+				"Text": "rb2"
+			},
+			"events": {},
+			"parts": {}
+		},
+		"test_track_bar": {
+			"widget": "FlatTrackBar",
+			"name": "test_track_bar",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "20",
+				"Top": "500",
+				"Width": "200",
+				"Height": "80",
+				"Value": "50",
+				"VerticalMaximum": "50",
+				"VerticalValue": "20"
+			},
+			"events": {},
+			"parts": {
+				"TrackButton": {
+					"widget": "FlatButton",
+					"properties": {},
+					"parts": {}
+				}
+			}
+		},
+		"test_text_box": {
+			"widget": "FlatTextBox",
+			"name": "test_text_box",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "20",
+				"Top": "600",
+				"Width": "200",
+				"Height": "40",
+				"TabIndex": "1",
+				"ContextMenu": "TextBox",
+				"Text": "text",
+				"MaxLength": "20"
+			},
+			"events": {},
+			"parts": {}
+		},
+		"test_numeric": {
+			"widget": "FlatNumeric",
+			"name": "test_numeric",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "20",
+				"Top": "700",
+				"Width": "200",
+				"Height": "40",
+				"TabIndex": "2",
+				"Value": "100.000000",
+				"SmallStep": "1.000000",
+				"LargeStep": "10.000000",
+				"MaxLength": "10"
+			},
+			"events": {},
+			"parts": {}
+		},
+		"test_group_box": {
+			"widget": "FlatGroupBox",
+			"name": "test_group_box",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "300",
+				"Top": "20",
+				"Width": "200",
+				"Height": "200",
+				"Hint": "Group Box",
+				"Text": "GB"
+			},
+			"events": {},
+			"parts": {},
+			"children": {}
+		},
+		"test_h_scroll_bar": {
+			"widget": "FlatHScrollBar",
+			"name": "test_h_scroll_bar",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "300",
+				"Top": "300",
+				"Width": "200",
+				"Height": "20",
+				"StepButtonSize": "32",
+				"SlideButtonSize": "32"
+			},
+			"events": {},
+			"parts": {
+				"LeftButton": {
+					"widget": "FlatButton",
+					"properties": {
+						"PushClick": "true",
+						"HoverClick": "true"
+					},
+					"parts": {}
+				},
+				"RightButton": {
+					"widget": "FlatButton",
+					"properties": {
+						"PushClick": "true",
+						"HoverClick": "true"
+					},
+					"parts": {}
+				},
+				"SlideButton": {
+					"widget": "FlatButton",
+					"properties": {},
+					"parts": {}
+				}
+			}
+		},
+		"test_list_box": {
+			"widget": "FlatListBox",
+			"name": "test_list_box",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "300",
+				"Top": "350",
+				"Width": "200",
+				"Height": "200",
+				"ItemHeight": "24",
+				"DynamicSlide": "true",
+				"HScrollExists": "true",
+				"Sorted": "true"
+			},
+			"events": {},
+			"parts": {
+				"VScrollBar": {
+					"widget": "FlatVScrollBar",
+					"properties": {
+						"Maximum": "72",
+						"LargeChange": "168",
+						"StepButtonSize": "32",
+						"SlideButtonSize": "32"
+					},
+					"parts": {
+						"UpButton": {
+							"widget": "FlatButton",
+							"properties": {
+								"BackImage": "png/up24x24_0.png",
+								"CaptureImage": "png/up24x24_1.png",
+								"PressImage": "png/up24x24_2.png",
+								"PushClick": "true",
+								"HoverClick": "true"
+							},
+							"parts": {}
+						},
+						"DownButton": {
+							"widget": "FlatButton",
+							"properties": {
+								"PushClick": "true",
+								"HoverClick": "true"
+							},
+							"parts": {}
+						},
+						"SlideButton": {
+							"widget": "FlatButton",
+							"properties": {},
+							"parts": {}
+						}
+					}
+				},
+				"HScrollBar": {
+					"widget": "FlatHScrollBar",
+					"properties": {
+						"Maximum": "72",
+						"LargeChange": "168",
+						"StepButtonSize": "32",
+						"SlideButtonSize": "32"
+					},
+					"parts": {
+						"LeftButton": {
+							"widget": "FlatButton",
+							"properties": {
+								"PushClick": "true",
+								"HoverClick": "true"
+							},
+							"parts": {}
+						},
+						"RightButton": {
+							"widget": "FlatButton",
+							"properties": {
+								"PushClick": "true",
+								"HoverClick": "true"
+							},
+							"parts": {}
+						},
+						"SlideButton": {
+							"widget": "FlatButton",
+							"properties": {},
+							"parts": {}
+						}
+					}
+				},
+				"CrossLabel": {
+					"widget": "FlatLabel",
+					"properties": {},
+					"parts": {}
+				}
+			}
+		},
+		"test_combo_box": {
+			"widget": "FlatComboBox",
+			"name": "test_combo_box",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "300",
+				"Top": "600",
+				"Width": "200",
+				"Height": "40"
+			},
+			"events": {},
+			"parts": {
+				"InputBox": {
+					"widget": "FlatTextBox",
+					"properties": {},
+					"parts": {}
+				},
+				"DropButton": {
+					"widget": "FlatButton",
+					"properties": {},
+					"parts": {}
+				},
+				"DropList": {
+					"widget": "FlatListBox",
+					"properties": {
+						"ItemHeight": "32"
+					},
+					"parts": {
+						"VScrollBar": {
+							"widget": "FlatVScrollBar",
+							"properties": {
+								"Maximum": "96",
+								"LargeChange": "32",
+								"StepButtonSize": "32",
+								"SlideButtonSize": "32"
+							},
+							"parts": {
+								"UpButton": {
+									"widget": "FlatButton",
+									"properties": {
+										"PushClick": "true",
+										"HoverClick": "true"
+									},
+									"parts": {}
+								},
+								"DownButton": {
+									"widget": "FlatButton",
+									"properties": {
+										"PushClick": "true",
+										"HoverClick": "true"
+									},
+									"parts": {}
+								},
+								"SlideButton": {
+									"widget": "FlatButton",
+									"properties": {},
+									"parts": {}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"test_panel": {
+			"widget": "FlatPanel",
+			"name": "test_panel",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "600",
+				"Top": "20",
+				"Width": "200",
+				"Height": "200",
+				"Text": "Panel",
+				"ScrollSize": "12",
+				"DynamicSlide": "true"
+			},
+			"events": {},
+			"parts": {
+				"VScrollBar": {
+					"widget": "FlatVScrollBar",
+					"properties": {
+						"Maximum": "112",
+						"LargeChange": "188",
+						"StepButtonSize": "32",
+						"SlideButtonSize": "32"
+					},
+					"parts": {
+						"UpButton": {
+							"widget": "FlatButton",
+							"properties": {
+								"PushClick": "true",
+								"HoverClick": "true"
+							},
+							"parts": {}
+						},
+						"DownButton": {
+							"widget": "FlatButton",
+							"properties": {
+								"PushClick": "true",
+								"HoverClick": "true"
+							},
+							"parts": {}
+						},
+						"SlideButton": {
+							"widget": "FlatButton",
+							"properties": {},
+							"parts": {}
+						}
+					}
+				},
+				"HScrollBar": {
+					"widget": "FlatHScrollBar",
+					"properties": {
+						"Maximum": "112",
+						"LargeChange": "188",
+						"StepButtonSize": "32",
+						"SlideButtonSize": "32"
+					},
+					"parts": {
+						"LeftButton": {
+							"widget": "FlatButton",
+							"properties": {
+								"PushClick": "true",
+								"HoverClick": "true"
+							},
+							"parts": {}
+						},
+						"RightButton": {
+							"widget": "FlatButton",
+							"properties": {
+								"PushClick": "true",
+								"HoverClick": "true"
+							},
+							"parts": {}
+						},
+						"SlideButton": {
+							"widget": "FlatButton",
+							"properties": {},
+							"parts": {}
+						}
+					}
+				},
+				"CrossLabel": {
+					"widget": "FlatLabel",
+					"properties": {},
+					"parts": {}
+				}
+			}
+		},
+		"test_tree_view": {
+			"widget": "FlatTreeView",
+			"name": "test_tree_view",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "600",
+				"Top": "300",
+				"Width": "200",
+				"Height": "200",
+				"ItemHeight": "24",
+				"IndentWidth": "16",
+				"ScrollSize": "16",
+				"DynamicSlide": "true",
+				"Sorted": "true"
+			},
+			"events": {},
+			"parts": {
+				"VScrollBar": {
+					"widget": "FlatVScrollBar",
+					"properties": {
+						"Maximum": "128",
+						"LargeChange": "184",
+						"StepButtonSize": "32",
+						"SlideButtonSize": "32"
+					},
+					"parts": {
+						"UpButton": {
+							"widget": "FlatButton",
+							"properties": {
+								"PushClick": "true",
+								"HoverClick": "true"
+							},
+							"parts": {}
+						},
+						"DownButton": {
+							"widget": "FlatButton",
+							"properties": {
+								"PushClick": "true",
+								"HoverClick": "true"
+							},
+							"parts": {}
+						},
+						"SlideButton": {
+							"widget": "FlatButton",
+							"properties": {},
+							"parts": {}
+						}
+					}
+				},
+				"HScrollBar": {
+					"widget": "FlatHScrollBar",
+					"properties": {
+						"Maximum": "120",
+						"LargeChange": "184",
+						"StepButtonSize": "32",
+						"SlideButtonSize": "32"
+					},
+					"parts": {
+						"LeftButton": {
+							"widget": "FlatButton",
+							"properties": {
+								"PushClick": "true",
+								"HoverClick": "true"
+							},
+							"parts": {}
+						},
+						"RightButton": {
+							"widget": "FlatButton",
+							"properties": {
+								"PushClick": "true",
+								"HoverClick": "true"
+							},
+							"parts": {}
+						},
+						"SlideButton": {
+							"widget": "FlatButton",
+							"properties": {},
+							"parts": {}
+						}
+					}
+				},
+				"CrossLabel": {
+					"widget": "FlatLabel",
+					"properties": {},
+					"parts": {}
+				}
+			}
+		},
+		"test_data_grid": {
+			"widget": "FlatDataGrid",
+			"name": "test_data_grid",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "600",
+				"Top": "520",
+				"Width": "200",
+				"Height": "200",
+				"RowHeadersVisible": "true",
+				"ColumnHeadersVisible": "true",
+				"RowSelectable": "true",
+				"ColumnSelectable": "true",
+				"TextAlign": "Center",
+				"RowHeight": "30",
+				"ColumnWidth": "80",
+				"ScrollSize": "16",
+				"DynamicSlide": "true"
+			},
+			"events": {},
+			"parts": {
+				"VScrollBar": {
+					"widget": "FlatVScrollBar",
+					"properties": {
+						"Maximum": "146",
+						"LargeChange": "184",
+						"StepButtonSize": "32",
+						"SlideButtonSize": "32"
+					},
+					"parts": {
+						"UpButton": {
+							"widget": "FlatButton",
+							"properties": {
+								"PushClick": "true",
+								"HoverClick": "true"
+							},
+							"parts": {}
+						},
+						"DownButton": {
+							"widget": "FlatButton",
+							"properties": {
+								"PushClick": "true",
+								"HoverClick": "true"
+							},
+							"parts": {}
+						},
+						"SlideButton": {
+							"widget": "FlatButton",
+							"properties": {},
+							"parts": {}
+						}
+					}
+				},
+				"HScrollBar": {
+					"widget": "FlatHScrollBar",
+					"properties": {
+						"Maximum": "536",
+						"LargeChange": "184",
+						"StepButtonSize": "32",
+						"SlideButtonSize": "32"
+					},
+					"parts": {
+						"LeftButton": {
+							"widget": "FlatButton",
+							"properties": {
+								"PushClick": "true",
+								"HoverClick": "true"
+							},
+							"parts": {}
+						},
+						"RightButton": {
+							"widget": "FlatButton",
+							"properties": {
+								"PushClick": "true",
+								"HoverClick": "true"
+							},
+							"parts": {}
+						},
+						"SlideButton": {
+							"widget": "FlatButton",
+							"properties": {},
+							"parts": {}
+						}
+					}
+				},
+				"CrossLabel": {
+					"widget": "FlatLabel",
+					"properties": {},
+					"parts": {}
+				}
+			}
+		},
+		"test_list_view": {
+			"widget": "FlatListView",
+			"name": "test_list_view",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "900",
+				"Top": "50",
+				"Width": "300",
+				"Height": "300",
+				"ItemWidth": "100",
+				"ItemHeight": "100",
+				"GlyphWidth": "64",
+				"GlyphHeight": "64",
+				"DynamicSlide": "true",
+				"Sorted": "true"
+			},
+			"events": {},
+			"parts": {
+				"VScrollBar": {
+					"widget": "FlatVScrollBar",
+					"properties": {
+						"Maximum": "300",
+						"LargeChange": "300",
+						"StepButtonSize": "32",
+						"SlideButtonSize": "32"
+					},
+					"parts": {
+						"UpButton": {
+							"widget": "FlatButton",
+							"properties": {
+								"PushClick": "true",
+								"HoverClick": "true"
+							},
+							"parts": {}
+						},
+						"DownButton": {
+							"widget": "FlatButton",
+							"properties": {
+								"PushClick": "true",
+								"HoverClick": "true"
+							},
+							"parts": {}
+						},
+						"SlideButton": {
+							"widget": "FlatButton",
+							"properties": {},
+							"parts": {}
+						}
+					}
+				}
+			}
+		},
+		"test_main_menu": {
+			"widget": "FlatMainMenu",
+			"name": "test_main_menu",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "900",
+				"Top": "400",
+				"Width": "200",
+				"Height": "30"
+			},
+			"events": {},
+			"parts": {}
+		}
+	}
+}

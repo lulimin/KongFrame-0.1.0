@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="windows\win_egl.h">
+      <Filter>windows</Filter>
+    </ClInclude>
+    <ClInclude Include="windows\win_terminal.h">
+      <Filter>windows</Filter>
+    </ClInclude>
+    <ClInclude Include="memory_link.h" />
+    <ClInclude Include="memory_list.h" />
+    <ClInclude Include="read_json.h" />
+    <ClInclude Include="link_creator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="windows\win_app.cpp">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="windows\win_egl.cpp">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="windows\win_terminal.cpp">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="memory_link.cpp" />
+    <ClCompile Include="memory_list.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="windows">
+      <UniqueIdentifier>{a45ad426-7aa2-4a91-b650-71281f1a44d4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+{
+    "ScriptPath": "../../../asset/script",
+    "CoderPath": "../../../asset",
+    "AssetPath": "../../../asset",
+    "ScriptReload": true,
+    "MemoryCheck": 0,
+    "Sleep": 0,
+    "Profiler": true,
+    "HideWindow": false,
+    "MainObject": "FlatWindow",
+    "MainScript": "ud_main"
+}

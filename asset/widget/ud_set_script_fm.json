@@ -1,0 +1,291 @@
+{
+	"widget": "FlatForm",
+	"name": "ud_set_script_fm",
+	"script": "ud_set_script_fm",
+	"loader": "ud_set_script_fm_load",
+	"properties": {
+		"Left": "72",
+		"Top": "80",
+		"Width": "712",
+		"Height": "456"
+	},
+	"events": {
+		"show": "ud_set_script_fm_show"
+	},
+	"children": {
+		"label1": {
+			"widget": "FlatLabel",
+			"name": "label1",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "40",
+				"Top": "32",
+				"Width": "72",
+				"Height": "30",
+				"Text": "script"
+			},
+			"events": {}
+		},
+		"label2": {
+			"widget": "FlatLabel",
+			"name": "label2",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "40",
+				"Top": "72",
+				"Width": "72",
+				"Height": "30",
+				"Text": "loader"
+			},
+			"events": {}
+		},
+		"script_tx": {
+			"widget": "FlatTextBox",
+			"name": "script_tx",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "112",
+				"Top": "32",
+				"Width": "440",
+				"Height": "30"
+			},
+			"events": {}
+		},
+		"loader_tx": {
+			"widget": "FlatTextBox",
+			"name": "loader_tx",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "112",
+				"Top": "72",
+				"Width": "440",
+				"Height": "30"
+			},
+			"events": {}
+		},
+		"event_dg": {
+			"widget": "FlatDataGrid",
+			"name": "event_dg",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "40",
+				"Top": "120",
+				"Width": "632",
+				"Height": "200",
+				"ColumnHeadersVisible": "true",
+				"RowSelectable": "true",
+				"RowHeight": "24",
+				"ColumnWidth": "310",
+				"ColumnCount": "2"
+			},
+			"events": {},
+			"parts": {
+				"VScrollBar": {
+					"widget": "FlatVScrollBar",
+					"properties": {},
+					"parts": {
+						"UpButton": {
+							"widget": "FlatButton",
+							"properties": {}
+						},
+						"DownButton": {
+							"widget": "FlatButton",
+							"properties": {}
+						},
+						"SlideButton": {
+							"widget": "FlatButton",
+							"properties": {}
+						}
+					}
+				},
+				"HScrollBar": {
+					"widget": "FlatHScrollBar",
+					"properties": {},
+					"parts": {
+						"LeftButton": {
+							"widget": "FlatButton",
+							"properties": {}
+						},
+						"RightButton": {
+							"widget": "FlatButton",
+							"properties": {}
+						},
+						"SlideButton": {
+							"widget": "FlatButton",
+							"properties": {}
+						}
+					}
+				},
+				"CrossLabel": {
+					"widget": "FlatLabel",
+					"properties": {}
+				}
+			}
+		},
+		"event_cx": {
+			"widget": "FlatComboBox",
+			"name": "event_cx",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "40",
+				"Top": "336",
+				"Width": "304",
+				"Height": "30"
+			},
+			"events": {
+				"select": "event_cx_select"
+			},
+			"parts": {
+				"InputBox": {
+					"widget": "FlatTextBox",
+					"properties": {}
+				},
+				"DropButton": {
+					"widget": "FlatButton",
+					"properties": {}
+				},
+				"DropList": {
+					"widget": "FlatListBox",
+					"properties": {
+						"ItemHeight": "16"
+					},
+					"parts": {
+						"VScrollBar": {
+							"widget": "FlatVScrollBar",
+							"properties": {},
+							"parts": {
+								"UpButton": {
+									"widget": "FlatButton",
+									"properties": {}
+								},
+								"DownButton": {
+									"widget": "FlatButton",
+									"properties": {}
+								},
+								"SlideButton": {
+									"widget": "FlatButton",
+									"properties": {}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"func_tx": {
+			"widget": "FlatTextBox",
+			"name": "func_tx",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "368",
+				"Top": "336",
+				"Width": "304",
+				"Height": "30"
+			},
+			"events": {}
+		},
+		"add_bn": {
+			"widget": "FlatButton",
+			"name": "add_bn",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "40",
+				"Top": "392",
+				"Width": "120",
+				"Height": "32",
+				"Text": "Add"
+			},
+			"events": {
+				"click": "add_bn_click"
+			}
+		},
+		"remove_bn": {
+			"widget": "FlatButton",
+			"name": "remove_bn",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "184",
+				"Top": "392",
+				"Width": "120",
+				"Height": "32",
+				"Text": "Remove"
+			},
+			"events": {
+				"click": "remove_bn_click"
+			}
+		},
+		"ok_bn": {
+			"widget": "FlatButton",
+			"name": "ok_bn",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "408",
+				"Top": "392",
+				"Width": "120",
+				"Height": "32",
+				"Text": "OK"
+			},
+			"events": {
+				"click": "ok_bn_click"
+			}
+		},
+		"cancel_bn": {
+			"widget": "FlatButton",
+			"name": "cancel_bn",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "552",
+				"Top": "392",
+				"Width": "120",
+				"Height": "32",
+				"Text": "Cancel"
+			},
+			"events": {
+				"click": "cancel_bn_click"
+			}
+		},
+		"generate_bn": {
+			"widget": "FlatButton",
+			"name": "generate_bn",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "560",
+				"Top": "72",
+				"Width": "112",
+				"Height": "32",
+				"Text": "Generate"
+			},
+			"events": {
+				"click": "generate_bn_click"
+			}
+		},
+		"open_bn": {
+			"widget": "FlatButton",
+			"name": "open_bn",
+			"script": "",
+			"loader": "",
+			"properties": {
+				"Left": "560",
+				"Top": "32",
+				"Width": "112",
+				"Height": "32",
+				"Text": "Open"
+			},
+			"events": {
+				"click": "open_bn_click"
+			}
+		}
+	}
+}

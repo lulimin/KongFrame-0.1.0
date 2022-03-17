@@ -14,7 +14,7 @@
 # Compiled Dynamic libraries
 *.so
 *.dylib
-*.dll
+#*.dll
 
 # Fortran module files
 *.mod
@@ -24,9 +24,27 @@
 *.lai
 *.la
 *.a
-*.lib
+#*.lib
 
 # Executables
 *.exe
 *.out
 *.app
+
+# Directories
+Debug/
+.vs/
+_intermediate/
+bin/
+build/
+build_android/native-activity/app/.cxx/Debug/
+build_android/native-activity/app/.cxx/RelWithDebInfo/
+build_android/native-activity/app/build/
+build_android/native-activity/app/src/main/assets/asset/
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+*.vcxproj.user
