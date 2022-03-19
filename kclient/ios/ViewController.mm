@@ -536,8 +536,7 @@ static bool ios_frame_log(void* context, int level, const char* info)
 
         if ((cur_time - m_dActionUpTime) < 0.3F)
         {
-            msg.nType = IInputService::TYPE_LEFT_DOUBLE;
-
+            msg.nType = IInputService::TYPE_LEFT_DUAL;
         }
         else
         {
