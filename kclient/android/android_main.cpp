@@ -618,7 +618,7 @@ static int32_t engine_handle_input(struct android_app* app, AInputEvent* event)
 
                 if ((cur_time - engine->dActionUpTime) < 0.3F)
                 {
-			        msg.nType = IInputService::TYPE_LEFT_DOUBLE;
+			        msg.nType = IInputService::TYPE_LEFT_DUAL;
                 }
                 else
                 {
