@@ -47,4 +47,5 @@ build_android/native-activity/app/src/main/assets/asset/
 
 # Windows
 Thumbs.db
+*.VC.db
 *.vcxproj.user
